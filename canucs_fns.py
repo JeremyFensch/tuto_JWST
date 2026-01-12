@@ -179,7 +179,7 @@ class CANUCSGalaxy:
             
             fig = plt.figure(figsize=(10, 10))
 #            ax_sed = fig.add_axes([0.7+0.2, 0.55+0.04, 0.775, 0.36])
-            ax_sed = fig.add_axes([0.2, 0.55+0.04, 0.275, 0.36])   
+            ax_sed = fig.add_axes([0.15, 0.55+0.04, 0.775, 0.36])   
             plt.errorbar(lam_centers_db, obs_sed,
                          yerr=obs_err, 
                          xerr=(lam_widths/2, lam_widths/2),
@@ -202,7 +202,7 @@ class CANUCSGalaxy:
             plt.ylabel(r'Flux Density [$\mu$Jy]')
 
 #            ax_res = fig.add_axes([0.7+0.2, 0.46+0.04, 0.775, 0.09])
-            ax_res = fig.add_axes([0.2, 0.46+0.04, 0.275, 0.09])
+            ax_res = fig.add_axes([0.15, 0.46+0.04, 0.775, 0.09])
             plt.axhline(0,color='k',alpha=0.3)
             plt.axhline(1,color='firebrick',linestyle='--',alpha=0.1)
             plt.axhline(-1,color='firebrick',linestyle='--',alpha=0.1)
